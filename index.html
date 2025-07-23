@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Abismo Silencioso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Rock Salt', cursive, Arial, sans-serif;
+            background: linear-gradient(135deg, #232526 0%, #414345 100%);
+            color: #fff;
+        }
+        header {
+            background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            padding: 100px 0 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.7);
+        }
+        header h1 {
+            font-size: 4em;
+            letter-spacing: 5px;
+            margin: 0;
+            text-shadow: 2px 2px 14px #000;
+        }
+        nav {
+            background: #111;
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            padding: 16px 0;
+        }
+        nav a {
+            color: #f00;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(30,30,30,0.85);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+        }
+        .members {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .member {
+            text-align: center;
+            width: 180px;
+        }
+        .member img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 3px solid #f00;
+            object-fit: cover;
+            margin-bottom: 12px;
+        }
+        .events li {
+            margin-bottom: 12px;
+            font-size: 1.2em;
+        }
+        .gallery {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 180px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #000;
+        }
+        footer {
+            background: #111;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.1em;
+            color: #aaa;
+            margin-top: 40px;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 2em;}
+            section { padding: 10px;}
+            .members, .gallery { gap: 14px;}
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Abismo Silencioso</h1>
+        <p>¡Rockeando desde 2020!</p>
+    </header>
+    <nav>
+        <a href="#miembros">Miembros</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <section id="miembros">
+        <h2>Miembros de la Banda</h2>
+        <div class="members">
+            <div class="member">
+                <img src="https://images.unsplash.com/photo-1526178613658-1d6a5a1a0ed4?auto=format&fit=crop&w=400&q=80" alt="Guitarrista">
+                <h3>Benja “El Riff” Fuenza</h3>
+                <p>Guitarra líder</p>
+            </div>
+            <div class="member">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Baterista">
+                <h3>Yanko “Thunder” Bravo</h3>
+                <p>Batería</p>
+            </div>
+            <div class="member">
+                <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=400&q=80" alt="Cantante">
+                <h3>Lemotelli “Voz” Díaz</h3>
+                <p>Vocalista</p>
+            </div>
+            <div class="member">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Bajista">
+                <h3>Jotape “Jazz” Soto</h3>
+                <p>Bajista</p>
+            </div>
+        </div>
+    </section>
+    <section id="eventos">
+        <h2>Próximos Eventos</h2>
+        <ul class="events">
+            <li>25 de Agosto - Sala RockLife, CDMX</li>
+            <li>10 de Septiembre - Festival Rock en Vivo</li>
+            <li>1 de Octubre - Bar La Caverna</li>
+        </ul>
+    </section>
+    <section id="galeria">
+        <h2>Galería</h2>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1465101178521-c1a5a3b5a3b4?auto=format&fit=crop&w=400&q=80" alt="Banda en vivo">
+            <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Concierto">
+            <img src="https://images.unsplash.com/photo-1508873699372-7aeab60b44c9?auto=format&fit=crop&w=400&q=80" alt="Ensayo">
+        </div>
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label>Nombre:</label>
+            <input type="text" name="nombre" required><br><br>
+            <label>Email:</label>
+            <input type="email" name="email" required><br><br>
+            <label>Mensaje:</label><br>
+            <textarea name="mensaje" rows="4" required></textarea><br><br>
+            <button type="submit">Enviar</button>
+        </form>
+        <p>También puedes escribirnos a <strong>abismosilenciosoficial@gmail.com</strong></p>
+    </section>
+    <footer>
+        &copy; 2025 Abismo Silencioso. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
